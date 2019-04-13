@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="js\jquery-3.4.0.slim.min.js" type="text/javascript"></script>
+  <script src="js\jquery.event.move.js" type="text/javascript"></script>
+  <script src="js\jquery.twentytwenty.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
+  <link href="css\style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="comparison">
+    <div class="container1">
+      <!-- The before image is first -->
+      <img src="images\Direkt Vergleich\Shot 1\Ultra1.jpg"/>
+      <!-- The after image is last -->
+      <img src="images\Direkt Vergleich\Shot 1\Low1.jpg" />
+    </div>
+  </div>
+  
+  <div class="comparison">
+    <div class="container1">
+      <!-- The before image is first -->
+      <img src="images\Direkt Vergleich\Shot 1\Ultra1.jpg"/>
+      <!-- The after image is last -->
+      <img src="images\Direkt Vergleich\Shot 1\Low1.jpg" />
+    </div>
+  </div>
+  
+  
+  
+  <script>
+$(function(){
+      $(".container1").twentytwenty({
+        default_offset_pct: 0.5,
+        orientation: 'horizontal',
+        before_label: 'Before',
+        after_label: 'After',
+        no_overlay: false,
+        move_slider_on_hover: false,
+        move_with_handle_only: true,
+        click_to_move: true
+      });
+    });
+
+    
+    
+  </script>
+</body>
+</html>
